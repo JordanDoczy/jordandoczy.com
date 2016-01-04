@@ -55,12 +55,13 @@ p {
 ul {
 	padding-left: 0px;
 }
-
+.menu-icon {
+	margin-right: 20px;
+	margin-top: 7px;
+	padding: 0px;
+}
 .menu-icon img {
 	width: 28px;
-	margin-right: 20px;
-	margin-top: 15px;
-	padding: 0px;
 }
 nav.navbar.shrink {
  	padding-top: 0px;		
