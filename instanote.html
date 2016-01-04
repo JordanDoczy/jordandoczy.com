@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" />
+
+    <title>Instanote</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+    <link href="css/global_styles.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/detail-page-styles.css" rel="stylesheet" type="text/css">
+    <link href="css/instanote.css" rel="stylesheet" type="text/css">
+    
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="flickity-docs/flickity.css" rel="stylesheet" media="screen">
+    </head>
+
+    
+    <body>
+        <div id="container">
+            <input id="toggle" type="checkbox">
+            <div id="content"> 
+
+                <!-- nav -->
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="mailto:hello@jordandoczy.com"><p>hello@jordandoczy.com</p></a>
+                        </div>
+                        <div class="nav navbar-nav navbar-right">
+                                <label for="toggle" class="menu-icon" id="menu-icon"><img src="images/_common/menu.png"></label>
+                            </div>
+                        </div>
+                </nav>
+    
+                <!-- tout -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="tout-hero">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 tout-copy">
+                                        <h1>instanote</h1>
+                                        <p>preserve your memories with instanote</p>
+                                        <p><a href="#" role="button"><img class="button-app-store" src="images/_common/appstore.png"></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- body -->
+                <div class="container project">
+                    <div class="row summary">
+                        <div class="col-xs-12 col-sm-10">
+                            <h2>Project Summary</h2>
+                            Instanote attaches captions, tags, and locations to your photos to provide a robust tool for creating, editing, and searching your memories.
+                        </div>
+                    </div>
+                    <div class="row details">
+                        <div class="col-md-10">
+                            <h3>Technical Details</h3>
+                            <ul>
+                                <li>Swift 2.0</li>
+                                <li>Core Data Infrastructure</li>
+                                <li>Custom Camera (AVFoundation)</li>
+                                <li>Custom Table Cells</li>
+                                <li>Map Kit Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row demo">
+                        <div class="appDemo col-sm-2 col-sm-offset-10  col-xs-12">APP DEMO</div>
+                            <div class="phone">
+                                <video class="video" id="video" poster="images/instanote/detail/poster@2x.jpg">
+                                    <source src="videos/instanote.mp4" type="video/mp4">
+                                    <p>Your browser does not support the video tag.</p>
+                                </video>
+                                <div id="play" class="play-button" ></div>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <div class="row">
+                            <div class="col-xs-12"><h2>Features</h2></div>
+                        </div>
+                        <div class="row gallery js-flickity" data-flickity-options='{ "watchCSS": true}'>
+                            <div  class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                                <img class="feature-image" src="images/instanote/detail/feature-1@2x.jpg" />
+                                <h3>Core Data</h3>
+                                <p>Each view harnesses the power of Core Data combining effieciency and utility.</p>
+                            </div>
+                            <div  class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                                <img class="feature-image" src="images/instanote/detail/feature-2@2x.jpg" />
+                                <h3>Predictive Typing</h3>
+                                <p>Revealing previous entries provides a fast and convienient typing experience.</p>
+                            </div>
+                            <div  class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                                <img class="feature-image" src="images/instanote/detail/feature-3@2x.jpg" />
+                                <h3>Filtered Views</h3>
+                                <p>Type into the search bar or click the tags to filter your results.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="matchpop.html">
+                        <div id="nextProject-button" class="row">
+                          <div class="col-md-12"><p>See the next project: Match Pop! <span><img src="images/_common/arrow-white-large.png"></span></p></div>
+                        </div>
+                    </a>
+                </div> 
+            
+                <!-- footer -->
+                <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6"><p>Get in touch:</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ul class="social-icons">
+                                    <li><a href="#"><img class="social-image" src="images/_common/email.png"></a></li>
+                                    <li><a href="#"><img  class="social-image" src="images/_common/linkedin.png"></a></li>
+                                    <li><a href="#"><img  class="social-image" src="images/_common/github.png"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div> <!-- end content -->
+            
+            <!-- menu -->
+            <div id="menu" class="slide-menu">
+                <div class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="mailto:hello@jordandoczy.com">Contact</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><h3>Projects</h3></li>
+                    <ul>
+                        <li><a href="instanote.html">instanote</a></li>
+                        <li><a href="graph.html">Graph</a></li>
+                        <li><a href="matchpop.html">MatchPop!</a></li>
+                        <li><a href="acronym.html">Acronym</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- end container -->
+
+
+
+
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
+    <script type="text/javascript" src="js/detail-page.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script src="flickity-docs/flickity.pkgd.min.js"></script>
+    
+
+  </body>
+</html>

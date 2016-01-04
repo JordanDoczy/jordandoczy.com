@@ -1,0 +1,156 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.appDemo {
+    background-color: #c7c7c7;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.button-app-store {
+	width: 100px;
+	margin-top: 30px;
+}
+.demo {
+	background-color: #ececec;
+	text-align: center;
+	margin-left: -5px;
+	margin-right: -5px;
+}
+.details ul {
+	list-style-type: none;
+	line-height: 2;
+	margin-bottom: 40px;
+}
+.details ul > li:before {
+	content: "- ";
+}
+.feature-image {
+	width: 220px;
+}
+.features {
+	text-align: center;
+}
+.flickity-enabled  {
+  margin-bottom: 0;
+}
+.flickity-page-dots .dot.is-selected {
+    background: #363636 !important;
+}
+.flickity-page-dots .dot {
+	width: 18px !important;
+	height: 18px !important;
+	background: #fff !important;
+	border: 1px solid black !important;
+}
+.flickity-prev-next-button {
+	display: none !important;
+}
+.gallery:after {
+  content: 'flickity';
+  display: none;
+}
+.js-flickity {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.phone {
+	background: url('../images/_common/iphone.png') no-repeat top left transparent;
+	background-size: 250px;
+	background-position: center 50px; 
+	position:relative;
+}
+.phone img {
+	width: 250px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.play-button {
+	background-image:url('../images/_common/play.png');
+	background-repeat:no-repeat;
+	width:15%;
+	height:15%;
+	opacity: 0.9;
+	position:absolute;
+	left:0%;
+	right:0%;
+	top:0%;
+	bottom:0%;
+	margin:auto;
+	background-size:contain;
+	background-position: center;
+	cursor: pointer;
+}
+.tout-copy {
+	padding-top: 5%;
+}
+.video {
+ 	width: 220px;
+ 	text-align:center;
+	padding-top: 79px;
+	margin-bottom: 75px;
+}
+video::-webkit-media-controls {
+    display:none !important;
+}
+
+@media only screen and (min-width: 375px) {
+	.tout-hero {
+		min-height: 250px;
+	}
+}
+@media only screen and (min-width: 414px) {
+	.tout-hero {
+		min-height: 276;
+	}
+}
+@media only screen and (min-width: 600px) {
+	.tout-hero {
+		min-height: 400px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.flickity-page-dots {
+		display: none;
+	}
+	.gallery:after {
+	    content: '';
+	    display: block;
+	}
+	.video {
+		padding-top: 72px;
+	}
+
+}
+@media only screen and (min-width: 1024px) {
+	.video {
+		padding-top: 67px;
+	}
+}
+
+#nextProject-button {
+	background: #363636;
+	color: #fff;
+	margin-top: 60px;
+	margin-bottom: 80px;
+	margin-left: -5px;
+	margin-right: -5px;
+}
+#nextProject-button:hover {
+	background: #666666;
+}
+#nextProject-button img {
+	width: 20px;
+	padding-left: 5px;
+}
+#nextProject-button p {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 0px;
+	letter-spacing: 0.4px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
