@@ -119,15 +119,8 @@ video::-webkit-media-controls {
 	    content: '';
 	    display: block;
 	}
-	.video {
-		padding-top: 72px;
-	}
-
 }
 @media only screen and (min-width: 1024px) {
-	.video {
-		padding-top: 67px;
-	}
 }
 
 #nextProject-button {
