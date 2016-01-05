@@ -60,6 +60,16 @@ var graph = [{
 var App = angular.module('MyApp', []);
 App.controller('MyController', function($scope, $http) {
 	var page = window.location.hash.substr(1);
-	$scope.data = self[page][0];
+	
+	var data;
+	try{
+		data = self[page][0];
+	}
+	catch(err) {
+		page = "instanote"
+		data = self[page][0];
+	}
+	
+	$scope.data = data;
 	$scope.folder = page;	
 });
