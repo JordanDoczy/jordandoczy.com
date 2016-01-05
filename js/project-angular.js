@@ -55,9 +55,6 @@ var graph = [{
  	"technicalDetails": ["Swift 2.0", "Core Data Infrastructure", "Custom Camera (AVFoundation)", "Custom Table Cells", "Map Kit Integration"],
 	"poster": "/images/graph/detail/poster@2x.jpg",
 	"video" : "/videos/graph.mp4",
-	"features": [{"title": "Core Data", "copy": "Each view harnesses the power of Core Data combining effieciency and utility.", "image": "/images/graph/detail/feature-1@2x.jpg"}, 
-			{"title": "Predictive Typing", "copy": "Revealing previous entries provides a fast and convienient typing experience.", "image": "/images/graph/detail/feature-2@2x.jpg"}, 
-			{"title": "Filtered Views", "copy": "Type into the search bar or click the tags to filter your results.", "image": "/images/graph/detail/feature-3@2x.jpg"}],
 	"nextProjectLink": {"href":"project.html#acronym", "text": "SEE THE NEXT PROJECT: ACRONYM"}
 }];
 
