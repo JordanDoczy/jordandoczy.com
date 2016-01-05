@@ -11,7 +11,7 @@
 }
 .button-app-store {
 	width: 100px;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 .demo {
 	background-color: #ececec;
@@ -88,7 +88,8 @@
 	cursor: pointer;
 }
 .tout-copy {
-	padding-top: 5%;
+	top: 90px;
+	position: absolute;
 }
 .video {
  	width: 220px;
@@ -100,9 +101,12 @@ video::-webkit-media-controls {
     display:none !important;
 }
 
-@media only screen and (min-width: 375px) {
+/* @media only screen and (min-width: 375px) {
 	.tout-hero {
 		min-height: 250px;
+	}
+	.tout-copy {
+		padding-top: 3%;
 	}
 }
 @media only screen and (min-width: 414px) {
@@ -125,7 +129,7 @@ video::-webkit-media-controls {
 	}
 }
 @media only screen and (min-width: 1024px) {
-}
+} */
 
 #nextProject-button {
 	background: #363636;

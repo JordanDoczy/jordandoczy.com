@@ -21,6 +21,7 @@ body {
 	font-family: 'PT Sans', Arial, sans-serif !important;
 	font-size: 1.4rem;
 	line-height: 1.4;
+	margin-top: 90px;
 }
 footer {
 	background-color: #ececec;
@@ -94,6 +95,7 @@ ul {
 	height: 100%;
 	opacity: 0;
 	right: 0;
+	top: 0;
  	position: absolute;
 	transition: opacity .3s;
 	width: 100%;
