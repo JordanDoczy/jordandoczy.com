@@ -25,14 +25,14 @@ body {
 }
 footer {
 	background-color: #ececec;
-	height: 130px;
+	height: 100px;
 }
 footer li {
 	display: inline-block;
 	margin-right: 20px;
 }
 footer p {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 h1 {
 	font-size: 2.4rem;
@@ -123,7 +123,7 @@ nav.navbar{
 .social {
 }
 .social-icons {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .social-image {
 	width: 32px;
@@ -146,7 +146,7 @@ nav.navbar{
 }
 #menu-open  {
 	cursor:  pointer;
-	margin-top: 7px;
+	margin-top: 13px;
 	margin-right: 20px;
 	width: 20px;
 }
