@@ -78,10 +78,11 @@ ul {
 .menu li {
 	margin: 0px;
 	padding-top: 20px;
+	padding-left: 20px;
 }
 .menu ul li {
 	margin: 0px;
-	padding-left: 15px;
+	padding-left: 30px;
 }
 .menu li h3 {
 	margin-top: 45px;
@@ -92,6 +93,7 @@ ul {
 	color: #fff;
 	height: 100%;
 	opacity: 0;
+	right: 0;
  	position: absolute;
 	transition: opacity .3s;
 	width: 100%;

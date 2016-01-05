@@ -10,7 +10,7 @@ var acronym = [{
 	"features": [{"title": "Core Data", "copy": "Each view harnesses the power of Core Data combining effieciency and utility.", "image": "/images/acronym/detail/feature-1@2x.jpg"}, 
 			{"title": "Predictive Typing", "copy": "Revealing previous entries provides a fast and convienient typing experience.", "image": "/images/acronym/detail/feature-2@2x.jpg"}, 
 			{"title": "Filtered Views", "copy": "Type into the search bar or click the tags to filter your results.", "image": "/images/acronym/detail/feature-3@2x.jpg"}],
-	"nextProjectLink": {"href":"project.html#graph", "text": "SEE THE NEXT PROJECT: GRAPH!"}
+	"nextProjectLink": {"href":"project.html#instanote", "text": "SEE THE NEXT PROJECT: INSTANOTE"}
 }];
 
 var instanote = [{
@@ -40,7 +40,7 @@ var matchpop = [{
 	"features": [{"title": "Preserve User Settings", "copy": "User settings are stored between sessions preserving their selections..", "image": "/images/matchpop/detail/feature-1@2x.jpg"}, 
 			{"title": "Dynamic Animations", "copy": "Subtle animations provide an interactive user experience.", "image": "/images/matchpop/detail/feature-2@2x.jpg"}, 
 			{"title": "Sounds", "copy": "A variety of sounds keeps the game fun. .", "image": "/images/matchpop/detail/feature-3@2x.jpg"}],
-	"nextProjectLink": {"href":"project.html#graph", "text": "SEE THE NEXT PROJECT: GRAPH!"}
+	"nextProjectLink": {"href":"project.html#graph", "text": "SEE THE NEXT PROJECT: GRAPH"}
 }];
 
 var graph = [{
@@ -55,7 +55,7 @@ var graph = [{
 	"features": [{"title": "Core Data", "copy": "Each view harnesses the power of Core Data combining effieciency and utility.", "image": "/images/graph/detail/feature-1@2x.jpg"}, 
 			{"title": "Predictive Typing", "copy": "Revealing previous entries provides a fast and convienient typing experience.", "image": "/images/graph/detail/feature-2@2x.jpg"}, 
 			{"title": "Filtered Views", "copy": "Type into the search bar or click the tags to filter your results.", "image": "/images/graph/detail/feature-3@2x.jpg"}],
-	"nextProjectLink": {"href":"project.html#graph", "text": "SEE THE NEXT PROJECT: GRAPH!"}
+	"nextProjectLink": {"href":"project.html#acronym", "text": "SEE THE NEXT PROJECT: ACRONYM"}
 }];
 
 var App = angular.module('MyApp', []);
