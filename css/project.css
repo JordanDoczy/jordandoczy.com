@@ -124,6 +124,7 @@ video::-webkit-media-controls {
 	margin-top: 60px;
 	margin-left: -5px;
 	margin-right: -5px;
+	margin-bottom: 80px;
 }
 #nextProject-button:hover {
 	background: #666666;
