@@ -13,6 +13,7 @@ container.scroll(function() {
 });
 
 $( document ).ready(function() {
+    
     var menu_open = document.getElementById("menu-open");
     menu_open.addEventListener("click", function(e){
         var content = document.getElementById("content");
@@ -34,6 +35,7 @@ $( document ).ready(function() {
     });
     
     window.onhashchange = function() {
+        window.scrollTo(0,0);
         location.reload();
     }
 
