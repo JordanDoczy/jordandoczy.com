@@ -5,7 +5,7 @@ container.scroll(function() {
         var menu = document.getElementById("menu");
         menu.style.paddingTop = scrollPosition + 'px';
 
-    if ($(document).scrollTop() > 5) {
+    if ($(document).scrollTop() > 20) {
         $('nav').addClass('shrink');
     } else {
         $('nav').removeClass('shrink');
@@ -35,7 +35,6 @@ $( document ).ready(function() {
     });
     
     window.onhashchange = function() {
-         $('nav').removeClass('shrink');
         window.scrollTo(0,0);
         location.reload();
     }
