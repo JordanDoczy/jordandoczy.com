@@ -2,7 +2,7 @@ var acronym = [{
 	"name": "Acronym",
 	"tagLine": "a prototype for looking up acronyms",
 	"tout" : "url('/images/acronym/detail/tout_mobile@2x.jpg') no-repeat;",
-	"toutColor" : "#000000",
+	"toutColor" : "#FFFFFF",
 	"summary": "Instanote attaches captions, tags, and locations to your photos providing a robust tool for creating, editing, and searching your memories.",
  	"technicalDetails": ["Swift 2.0", "Core Data Infrastructure", "Custom Camera (AVFoundation)", "Custom Table Cells", "Map Kit Integration"],
 	"poster": "/images/acronym/detail/poster@2x.jpg",
@@ -27,7 +27,7 @@ var instanote = [{
 }];
 
 var matchpop = [{
-	"name": "matchpop",
+	"name": "Match Pop!",
 	"tagLine": "put your memory skills to the test",
 	"tout" : "url('/images/matchpop/detail/tout_mobile@2x.jpg') no-repeat;",
 	"toutColor" : "#000000",
@@ -43,7 +43,7 @@ var matchpop = [{
 }];
 
 var graph = [{
-	"name": "graph",
+	"name": "Graph",
 	"tagLine": "a prototype for graphing equations",
 	"tout" : "url('/images/graph/detail/tout_mobile@2x.jpg') no-repeat;",
 	"toutColor" : "#FFFFFF",
@@ -60,5 +60,6 @@ var graph = [{
 var App = angular.module('MyApp', []);
 App.controller('MyController', function($scope, $http) {
 	var page = window.location.hash.substr(1);
-	$scope.data = self[page][0];	
+	$scope.data = self[page][0];
+	$scope.folder = page;	
 });

@@ -21,7 +21,7 @@ body {
 	font-family: 'PT Sans', Arial, sans-serif !important;
 	font-size: 1.4rem;
 	line-height: 1.4;
-	margin-top: 90px;
+	margin-top: 50px;
 }
 footer {
 	background-color: #ececec;
@@ -102,17 +102,20 @@ ul {
 	z-index: -1;
 }
 nav.navbar.shrink {
- 	padding-top: 0px;		
- 	padding-bottom: 0px;
- 	opacity: 0.94;
+/*  	padding-top: 0px;		
+ 	padding-bottom: 0px; */
 }
 nav.navbar{
-   -webkit-transition: all 0.4s ease;
-   transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	opacity: 0.94;
 }
 .navbar {
- 	padding-top: 20px;		
- 	padding-bottom: 20px;
+/*  	padding-top: 20px;		
+ 	padding-bottom:10px; */
+
+ 	padding-top: 0px;		
+ 	padding-bottom: 0px;
 	background-color: #fff;
 	border: none; 
 }
