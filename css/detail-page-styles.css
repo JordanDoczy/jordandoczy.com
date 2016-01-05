@@ -101,22 +101,9 @@ video::-webkit-media-controls {
     display:none !important;
 }
 
-/* @media only screen and (min-width: 375px) {
-	.tout-hero {
-		min-height: 250px;
-	}
-	.tout-copy {
-		padding-top: 3%;
-	}
-}
-@media only screen and (min-width: 414px) {
-	.tout-hero {
-		min-height: 276;
-	}
-}
 @media only screen and (min-width: 600px) {
-	.tout-hero {
-		min-height: 400px;
+	.tout-copy {
+		padding-top: 90px;
 	}
 }
 @media only screen and (min-width: 768px) {
@@ -129,7 +116,7 @@ video::-webkit-media-controls {
 	}
 }
 @media only screen and (min-width: 1024px) {
-} */
+}
 
 #nextProject-button {
 	background: #363636;
