@@ -17,8 +17,6 @@ $( document ).ready(function() {
     menu_open.addEventListener("click", function(e){
         var content = document.getElementById("content");
         content.style.position = "fixed";
-//         content.style.transform = "translateY(-10px)";
-        
         var menu = document.getElementById("menu");
         menu.style.opacity = "0.98";
         menu.style.zIndex = "100";
@@ -32,7 +30,13 @@ $( document ).ready(function() {
         
         var menu = document.getElementById("menu");
         menu.style.opacity = "0";
-        menu.style.zIndex = "1";
+        menu.style.zIndex = "-1";
     });
+    
+    window.onhashchange = function() {
+        location.reload();
+    }
+
+    
 });
 

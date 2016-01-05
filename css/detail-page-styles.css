@@ -52,9 +52,13 @@
   content: 'flickity';
   display: none;
 }
+.gallery-cell {
+	height: 100%;
+}
 .js-flickity {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+	height: 300px;
 }
 .phone {
 	background: url('../images/_common/iphone.png') no-repeat top left transparent;

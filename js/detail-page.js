@@ -11,6 +11,7 @@
     });
     playButton.addEventListener("click", function() {
         if (video.paused == true) {
+            video.src = angular.element(document.getElementById('container')).scope().data.video;
             video.play();
             playButton.style.display = 'none';
         } 
