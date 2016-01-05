@@ -26,6 +26,7 @@ body {
 footer {
 	background-color: #ececec;
 	height: 100px;
+	margin-top: 80px;
 }
 footer li {
 	display: inline-block;

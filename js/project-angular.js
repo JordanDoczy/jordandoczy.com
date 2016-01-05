@@ -1,4 +1,5 @@
 var acronym = [{
+	"folder": "acronym",
 	"name": "Acronym",
 	"tagLine": "a prototype for looking up acronyms",
 	"tout" : "url('/images/acronym/detail/tout_mobile@2x.jpg') no-repeat;",
@@ -11,6 +12,7 @@ var acronym = [{
 }];
 
 var instanote = [{
+	"folder": "instanote",
 	"name": "instanote",
 	"tagLine": "preserve your memories with instanote",
 	"tout" : "/images/instanote/detail/tout_mobile@2x.jpg",
@@ -27,6 +29,7 @@ var instanote = [{
 }];
 
 var matchpop = [{
+	"folder": "matchpop",
 	"name": "Match Pop!",
 	"tagLine": "put your memory skills to the test",
 	"tout" : "url('/images/matchpop/detail/tout_mobile@2x.jpg') no-repeat;",
@@ -43,6 +46,7 @@ var matchpop = [{
 }];
 
 var graph = [{
+	"folder": "graph",
 	"name": "Graph",
 	"tagLine": "a prototype for graphing equations",
 	"tout" : "url('/images/graph/detail/tout_mobile@2x.jpg') no-repeat;",

@@ -1,85 +1,145 @@
 <!DOCTYPE html>
-<html>
-<head>
-
+<html lang="en">
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jordan Doczy</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300|Vollkorn|PT+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/global_styles.css">
-    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="initial-scale = 1.0, minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Project</title>
+    
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href="css/global.css" rel="stylesheet" type="text/css">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
 
 </head>
-<body>
 
-    <nav class="navbar">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">hello@jordandoczy.com</a>
-          </div>
-          <div id="navbar" class="navbar-right">
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/_common/menu.png"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Instanote</a></li>
-                  <li><a href="#">Acronym</a></li>
-                  <li><a href="#">Graph</a></li>
-                  <li><a href="#">MatchPop!</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
+    <body ng-cloak class="ng-cloak" ng-app="MyApp">
+        <div id="container"  ng-controller="MyController">
+            <div id="content"> 
+
+                <!-- nav -->
+                <nav class="navbar  navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="mailto:hello@jordandoczy.com"><p>hello@jordandoczy.com</p></a>
+                        </div>
+                        <div class="nav navbar-nav navbar-right">
+                                <img src="images/_common/menu.png" id="menu-open" class="menu-icon">
+                        </div>
+                    </div>
+                </nav>
+                
+                <!-- tablet and larger (carousel) -->
+                <div id="myCarousel" class="carousel slide hidden-xs" data-ride="carousel" data-pause="none" data-interval="3000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="{{$index}}" ng-repeat="project in data.projects" ng-attr-class="{{$index==0 && 'active'}}"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item" ng-class="{item: true, active : ($index == 0)}" ng-repeat="project in data.projects">
+                            <a ng-attr-href="project.html#{{project.folder}}" role="button">
+                                <img class="img-responsive" alt='{{project.folder}}' data-src-base='/images/{{project.folder}}/home/' 
+                                    data-src='
+                                              <768:tout_mobile.jpg,
+                                              <1024:tout_tablet.jpg,
+                                              >1023:tout_desktop.jpg' 
+                                    data-src2x='
+                                              <768:tout_mobile@2x.jpg,
+                                              <1024:tout_tablet@2x.jpg,
+                                              >1023:tout_desktop@2x.jpg'
+                                />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12 carousel-tout-copy" ng-attr-style="color:{{project.toutColor}}">
+                                            <h1>{{project.name}}</h1>
+                                            <p>{{project.tagLine}}</p>
+                                            <h2 class="cta">See the project <img class="arrow" ng-attr-src="images/_common/arrow-{{project.toutColor}}".png" /></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- mobile version (stacked) -->
+                <div class="visible-xs">
+                    <div ng-repeat="project in data.projects">
+                        <a ng-attr-href="project.html#{{project.folder}}" role="button">
+                            <img class="img-responsive" alt='{{project.folder}}' data-src-base='/images/{{project.folder}}/home/' 
+                                data-src='
+                                    <768:tout_mobile.jpg,
+                                    <1024:tout_tablet.jpg,
+                                    >1023:tout_desktop.jpg' 
+                                data-src2x='
+                                    <768:tout_mobile@2x.jpg,
+                                    <1024:tout_tablet@2x.jpg,
+                                    >1023:tout_desktop@2x.jpg'
+                                />
+                            <div class="container tout-container">
+                                <div class="row">
+                                    <div class="col-xs-12 tout-copy" ng-attr-style="color:{{project.toutColor}}">
+                                        <h1>{{project.name}}</h1>
+                                        <p>{{project.tagLine}}</p>
+                                        <h2 class="cta">see the project <img class="arrow" ng-attr-src="images/_common/arrow-{{project.toutColor}}".png" /></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- footer -->
+                <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6"><p>Get in touch:</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ul class="social-icons">
+                                    <li><a href="mailto:hello@jordandoczy.com"><img class="social-image" src="images/_common/email.png"></a></li>
+                                    <li><a href="www.linkedin.com/in/jordandoczy"><img  class="social-image" src="images/_common/linkedin.png"></a></li>
+                                    <li><a href="https://github.com/jordandoczy"><img  class="social-image" src="images/_common/github.png"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div> <!-- end content -->
+            
+            <!-- menu -->
+                <nav id="menu" class="menu-overlay">
+                    <div class="menu container">
+                        <img src="/images/_common/close.png" class="menu-icon navbar-right" id="menu-close" />
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="mailto:hello@jordandoczy.com">Contact</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><h3>Projects</h3></li>
+                        <ul>
+                            <li><a href="project.html#acronym">Acronym</a></li>
+                            <li><a href="project.html#graph">Graph</a></li>
+                            <li><a href="project.html#instanote">Instanote</a></li>
+                            <li><a href="project.html#matchpop">Match Pop!</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </div> <!-- end container -->
 
 
-  <div class="site-wrapper">
-    <div id="jd-carousel-hero" class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item item- active  col-xs-12">
-          <a href="https://www.google.com/analytics/"><div class="tout-hero"></div></a>
-        </div>
-        <div class="carousel-item item- col-xs-12">
-          <a href="https://www.google.com/analytics/"><div class="tout-hero"></div></a>
-        </div>
-        <div class="carousel-item item- col-xs-12">
-          <a href="https://www.google.com/analytics/"><div class="tout-hero"></div></a>
-        </div>
-        <div class="carousel-item item- col-xs-12">
-          <a href="https://www.google.com/analytics/"><div class="tout-hero"></div></a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-      <footer class="clearfix">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-6 col-sm-6"><p>Get in touch:</p></div>
-            <div class="col-xs-6 col-sm-4 col-sm-offset-2 pull-right"><p>@JordanDoczy</p></div>  
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <ul id="social">
-                <li id="icon-email"><a href="#"><img src="images/_common/email.png"></a></li>
-                <li id="icon-linkedin"><a href="#"><img src="images/_common/linkedin.png"></a></li>
-                <li id="icon-github"><a href="#"><img src="images/_common/github.png"></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="js/home-angular.js"></script>
 
-   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
+    <script type="text/javascript" src="js/responsive-img.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/home.js"></script>
-</body>
+
+  </body>
 </html>
-
-
-

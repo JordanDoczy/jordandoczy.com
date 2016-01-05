@@ -1,0 +1,17 @@
+.arrow{
+    width: 30px;
+}
+.carousel-tout-copy{
+    position: absolute;
+    top: 90px;
+}
+.cta {
+    	font-family: 'Open Sans', 'PT Sans', Arial, sans-serif !important;
+}
+.tout-container {
+    position: relative;
+}
+.tout-copy{
+    position: absolute;
+    top: -250px;
+}
