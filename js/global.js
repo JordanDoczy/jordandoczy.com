@@ -1,10 +1,4 @@
-var container = $(window);
-var scrollPosition =  0;
-container.scroll(function() {
-    scrollPosition =  $(document).scrollTop()
-        var menu = document.getElementById("menu");
-        menu.style.paddingTop = scrollPosition + 'px';
-
+$(window).scroll(function() {
     if ($(document).scrollTop() > 20) {
         $('nav').addClass('shrink');
     } else {
@@ -35,7 +29,7 @@ $( document ).ready(function() {
     });
     
     window.onhashchange = function() {
-//         window.scrollTo(0,0);
+        window.scrollTo(0,0);
         location.reload();
     }
 });

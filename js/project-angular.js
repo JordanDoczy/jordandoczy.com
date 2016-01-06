@@ -59,6 +59,8 @@ var graph = [{
 }];
 
 var App = angular.module('MyApp', []);
+
+// App.controller('MyController', function($scope, $http) {
 App.controller('MyController', function($scope, $http) {
 	var page = window.location.hash.substr(1);
 	
@@ -72,5 +74,22 @@ App.controller('MyController', function($scope, $http) {
 	}
 	
 	$scope.data = data;
-	$scope.folder = page;	
+	$scope.folder = page;
+	$scope.video = document.querySelector("#video");
+	$scope.playButton = document.querySelector("#play-button");
+
+	
+	$scope.video.addEventListener("ended", function() {
+	    $scope.playButton.style.display = 'block';
+	    $scope.video.load() 
+	});
+	$scope.video.addEventListener("pause", function() {
+	    $scope.playButton.style.display = 'block';
+	});
+
+	$scope.playVideo = function() {
+		$scope.video.src = $scope.data.video;
+		$scope.video.play();
+		$scope.playButton.style.display = 'none';
+	};
 });
