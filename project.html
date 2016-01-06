@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="initial-scale = 1.0, minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" />
-
-    <title>Project</title>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="/js/project.js"></script>
-        
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href="css/global.css" rel="stylesheet" type="text/css">
-    <link href="css/project.css" rel="stylesheet" type="text/css">
-    <link href="flickity-docs/flickity.css" rel="stylesheet" media="screen">
-    <!--[if IE]>
-        <link href="css/project-ie.css" rel="stylesheet" type="text/css">
-    <![endif]-->
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="initial-scale = 1.0, minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" />
+        <title>Project</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="/js/project.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href="css/global.css" rel="stylesheet" type="text/css">
+        <link href="css/project.css" rel="stylesheet" type="text/css">
+        <link href="flickity-docs/flickity.css" rel="stylesheet" media="screen">
+    </head>
 
     <body ng-cloak class="ng-cloak" ng-app="MyApp">
         <div id="container"  ng-controller="MyController">
@@ -42,13 +36,13 @@
                     <div class="row">
                         <div class="tout-hero" ng-attr-style="color:{{data.toutColor}}">
                            <img class="img-responsive" alt='tout' data-src-base='/images/{{folder}}/detail/' data-src='
-                                                          <768:tout_mobile.jpg,
+                                                          <600:tout_mobile.jpg,
                                                           <1024:tout_tablet.jpg,
                                                           <1800:tout_desktop.jpg,
                                                           >1800:tout_desktop@2x.jpg' 
 
                                                 data-src2x='
-                                                          <768:tout_mobile@2x.jpg,
+                                                          <600:tout_mobile@2x.jpg,
                                                           <1024:tout_tablet@2x.jpg,
                                                           >1023:tout_desktop@2x.jpg'
                             />
@@ -84,8 +78,7 @@
                     <div class="row demo">
                         <div class="appDemo col-sm-2 col-sm-offset-10  col-xs-12">APP DEMO</div>
                             <div class="phone">
-                                <video class="video" id="video" ng-attr-poster="{{data.poster}}">
-                                    <source data-ng-src="{{data.video}}"  type="video/mp4">
+                                <video class="video" id="video" ng-attr-poster="{{data.poster}}" ng-attr-src="{{data.video}}">
                                     <p>Your browser does not support the video tag.</p>
                                 </video>
                                 <div id="play-button" class="play-button" ng-click="playVideo()"></div>
@@ -95,8 +88,15 @@
                         <div class="row">
                             <div class="col-xs-12"><h2>Features</h2></div>
                         </div>
-                        <div class="row gallery js-flickity" data-flickity-options='{ "watchCSS": true}'>
-                             <div  class="gallery-cell col-xs-12 col-sm-4" ng-repeat="feature in data.features" >
+                        <div id="flickity" class="row gallery js-flickity visible-xs" data-flickity-options='{ "watchCSS": true }'>
+                             <div  class="gallery-cell col-xs-12" ng-repeat="feature in data.features" >
+                                <img class="feature-image" ng-attr-src="{{feature.image}}"  />
+                                <h3>{{feature.title}}</h3>
+                                <p>{{feature.copy}}</p>
+                            </div>
+                        </div>
+                        <div class="row gallery hidden-xs">
+                             <div  class="gallery-cell col-xs-4" ng-repeat="feature in data.features" >
                                 <img class="feature-image" ng-attr-src="{{feature.image}}"  />
                                 <h3>{{feature.title}}</h3>
                                 <p>{{feature.copy}}</p>
@@ -147,16 +147,10 @@
                 </nav>
         </div> <!-- end container -->
 
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
-    <script type="text/javascript" src="js/responsive-img.min.js"></script>
-    <script type="text/javascript" src="js/global.js"></script>
-    <script src="flickity-docs/flickity.pkgd.min.js"></script>
-    
-
-
-  </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
+        <script type="text/javascript" src="js/responsive-img.min.js"></script>
+        <script type="text/javascript" src="js/global.js"></script>
+        <script src="flickity-docs/flickity.pkgd.min.js"></script>
+    </body>
 </html>

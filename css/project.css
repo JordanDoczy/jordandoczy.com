@@ -49,8 +49,8 @@
 	display: none !important;
 }
 .gallery:after {
-  content: 'flickity';
-  display: none;
+	content: 'flickity'; 
+	display: none;
 }
 .gallery-cell {
 	height: 100%;
@@ -141,4 +141,3 @@ video::-webkit-media-controls {
 	text-align: center;
 	text-transform: uppercase;
 }
-

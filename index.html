@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="initial-scale = 1.0, minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" />
-
-    <title>JordanDoczy.com</title>
-    
-        
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <link href="css/global.css" rel="stylesheet" type="text/css">
-    <link href="css/home.css" rel="stylesheet" type="text/css">
-
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="initial-scale = 1.0, minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" />
+        <title>JordanDoczy.com</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+        <link href="css/global.css" rel="stylesheet" type="text/css">
+        <link href="css/home.css" rel="stylesheet" type="text/css">
+    </head>
 
     <body ng-cloak class="ng-cloak" ng-app="MyApp">
         <div id="container"  ng-controller="MyController">
@@ -43,12 +39,12 @@
                             <a ng-attr-href="project.html#{{project.folder}}" role="button">
                                 <img class="img-responsive" alt='{{project.folder}}' data-src-base='/images/{{project.folder}}/home/' 
                                     data-src='
-                                              <768:tout_mobile.jpg,
+                                              <600:tout_mobile.jpg,
                                               <1024:tout_tablet.jpg,
                                               <1800:tout_desktop.jpg,
                                               >1800:tout_desktop@2x.jpg' 
                                   data-src2x='
-                                              <768:tout_mobile@2x.jpg,
+                                              <600:tout_mobile@2x.jpg,
                                               <1024:tout_tablet@2x.jpg,
                                               >1023:tout_desktop@2x.jpg'
                                 />
@@ -131,17 +127,11 @@
                 </nav>
         </div> <!-- end container -->
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="js/index.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
-    <script type="text/javascript" src="js/responsive-img.min.js"></script>
-    <script type="text/javascript" src="js/global.js"></script>
-    
-
-
-  </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
+        <script type="text/javascript" src="js/responsive-img.min.js"></script>
+        <script type="text/javascript" src="js/global.js"></script>
+    </body>
 </html>

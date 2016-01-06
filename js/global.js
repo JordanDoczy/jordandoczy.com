@@ -34,3 +34,12 @@ $( document ).ready(function() {
     }
 });
 
+function isIE() {
+  return window.navigator.userAgent.indexOf('MSIE') > 0;
+}
+function isTrident() {
+  return window.navigator.userAgent.indexOf('Trident') > 0;
+}
+function isEdge() {
+  return window.navigator.userAgent.indexOf('Edge') > 0;
+}
