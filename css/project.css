@@ -94,7 +94,7 @@
 .video {
  	width: 220px;
  	text-align:center;
-	padding-top: 79px;
+	padding-top: 81px;
 	margin-bottom: 75px;
 }
 video::-webkit-media-controls {
@@ -104,6 +104,9 @@ video::-webkit-media-controls {
 @media only screen and (min-width: 600px) {
 	.tout-copy {
 		padding-top: 90px;
+	}
+	.video {
+		padding-top: 79px;
 	}
 }
 @media only screen and (min-width: 768px) {
