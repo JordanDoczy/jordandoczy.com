@@ -18,11 +18,11 @@
 	text-align: center;
 	margin-left: -5px;
 	margin-right: -5px;
+	margin-top: 40px;
 }
 .details ul {
 	list-style-type: none;
 	line-height: 2;
-	margin-bottom: 40px;
 }
 .details ul > li:before {
 	content: "- ";

@@ -37,14 +37,13 @@ var matchpop = [{
 	"tout" : "url('/images/matchpop/detail/tout_mobile@2x.jpg') no-repeat;",
 	"toutColor" : "#000000",
 	"appStoreLink": "https://itunes.apple.com/us/app/matchpop!/id1062419829?mt=8",
-	"summary": "Instanote attaches captions, tags, and locations to your photos providing a robust tool for creating, editing, and searching your memories.",
- 	"technicalDetails": ["Swift 2.0", "Core Data Infrastructure", "Custom Camera (AVFoundation)", "Custom Table Cells", "Map Kit Integration"],
+	"summary": "Test your memory skills with Match Pop! Match all of the cards to play a surprise balloon game! ",
 	"poster": "/images/matchpop/detail/poster@2x.jpg",
 	"video" : "/videos/matchpop.mp4",
 	"videoIE" : "/videos/ie/matchpop.mp4",
-	"features": [{"title": "Preserve User Settings", "copy": "User settings are stored between sessions preserving their selections..", "image": "/images/matchpop/detail/feature-1@2x.jpg"}, 
-			{"title": "Dynamic Animations", "copy": "Subtle animations provide an interactive user experience.", "image": "/images/matchpop/detail/feature-2@2x.jpg"}, 
-			{"title": "Sounds", "copy": "A variety of sounds keeps the game fun. .", "image": "/images/matchpop/detail/feature-3@2x.jpg"}],
+	"features": [{"title": "Preserve User Settings", "copy": "User settings are stored between sessions preserving your selections..", "image": "/images/matchpop/detail/feature-1@2x.jpg"}, 
+			{"title": "Animations", "copy": "Subtle animations provide an interactive user experience.", "image": "/images/matchpop/detail/feature-2@2x.jpg"}, 
+			{"title": "Sounds", "copy": "A variety of sounds keeps the game fun and engaging.", "image": "/images/matchpop/detail/feature-3@2x.jpg"}],
 	"nextProjectLink": {"href":"project.html#graph", "text": "SEE THE NEXT PROJECT: GRAPH"}
 }];
 
