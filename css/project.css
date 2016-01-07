@@ -91,6 +91,9 @@
 	top: 80px;
 	position: absolute;
 }
+.tout-hero{
+	min-height: 213px;
+}
 .video {
  	width: 220px;
  	text-align:center;
