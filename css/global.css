@@ -121,10 +121,9 @@ nav.navbar{
 .navbar-right {
 	float: right;
 }
-.social {
-}
 .social-icons {
-    margin-top: 20px;
+	margin-top: 0px;
+	margin-bottom: 50px;
 }
 .social-image {
 	width: 32px;

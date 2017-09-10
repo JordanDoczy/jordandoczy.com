@@ -22,9 +22,15 @@ var matchpop = {
 	"tagLine": "put your memory skills to the test",
 	"toutColor" : "black",
 };
+var tetrafire = {
+	"folder": "tetrafire",
+	"name": "TetraFire",
+	"tagLine": "igniting a classic with a new twist",
+	"toutColor" : "white",
+};
 
 var data = [{
-	"projects": [instanote,graph,matchpop,acronym]
+	"projects": [tetrafire,instanote,graph,matchpop,acronym]
 }];
 
 

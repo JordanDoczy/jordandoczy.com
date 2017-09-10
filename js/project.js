@@ -9,7 +9,7 @@ var acronym = [{
 	"poster": "/images/acronym/detail/poster@2x.jpg",
 	"video" : "/videos/acronym.mp4",
 	"videoIE" : "/videos/ie/acronym.mp4",
-	"nextProjectLink": {"href":"project.html#instanote", "text": "SEE THE NEXT PROJECT: INSTANOTE"}
+	"nextProjectLink": {"href":"project.html#tetrafire", "text": "SEE THE NEXT PROJECT: TETRA FIRE"}
 }];
 
 var instanote = [{
@@ -60,6 +60,24 @@ var graph = [{
 	"video" : "/videos/graph.mp4",
 	"videoIE" : "/videos/ie/graph.mp4",
 	"nextProjectLink": {"href":"project.html#acronym", "text": "SEE THE NEXT PROJECT: ACRONYM"}
+}];
+
+var tetrafire = [{
+	"folder": "tetrafire",
+	"name": "Tetra Fire",
+	"tagLine": "igniting a classic with a new twist",
+	"tout" : "url('/images/tetrafire/detail/tout_mobile@2x.jpg') no-repeat;",
+	"toutColor" : "#FFFFFF",
+	"appStoreLink": "https://itunes.apple.com/us/app/tetra-fire/id1085398276?mt=8",
+	"summary": "Enjoy a classic game with a new twist! Tetra Fire adds a new puzzle-solving challenge to the classic game.",
+ 	"technicalDetails": ["Swift 3.0", "SceneKit", "Particle Animations", "Data Preservation"],
+	// "poster": "/images/tetrafire/detail/poster@2x.jpg",
+	// "video" : "/videos/tetrafire.mp4",
+	// "videoIE" : "/videos/ie/tetrafire.mp4",
+	// "features": [{"title": "Core Data", "copy": "Each view harnesses the power of Core Data combining effieciency and utility.", "image": "/images/instanote/detail/feature-1@2x.jpg"}, 
+	// {"title": "Predictive Typing", "copy": "Revealing previous entries provides a fast and convienient typing experience.", "image": "/images/instanote/detail/feature-2@2x.jpg"}, 
+	// {"title": "Filtered Views", "copy": "Type into the search bar or click a tag to filter your results.", "image": "/images/instanote/detail/feature-3@2x.jpg"}],
+	"nextProjectLink": {"href":"project.html#instanote", "text": "SEE THE NEXT PROJECT: INSTANOTE"}
 }];
 
 var App = angular.module('MyApp', []);
