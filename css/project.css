@@ -85,6 +85,9 @@
 	background-position: center;
 	cursor: pointer;
 }
+.summary a {
+	text-decoration: underline;
+}
 .tout-copy {
 	top: 80px;
 	position: absolute;

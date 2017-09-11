@@ -77,11 +77,29 @@ var tetrafire = [{
 	"features": [{"title": "Particle Animations", "copy": "Enhanced gameplay is achieved through realistic representations of fire, explosions, and smoke.", "image": "/images/tetrafire/detail/feature-1@2x.jpg"}, 
 	{"title": "Multiple Game Modes", "copy": "Choose between fire and classic modes to improve your puzzle-solving skills.", "image": "/images/tetrafire/detail/feature-2@2x.jpg"}, 
 	{"title": "15 Challenging Levels", "copy": "Test your ability to stop the fire as each level increases in difficulty.", "image": "/images/tetrafire/detail/feature-3@2x.jpg"}],
+	"nextProjectLink": {"href":"project.html#oovoo", "text": "SEE THE NEXT PROJECT: OOVOO"}
+}];
+
+var oovoo = [{
+	"folder": "ovoo",
+	"name": "ooVoo",
+	"tagLine": "video chat, messaging, & stories",
+	"tout" : "url('/images/oovoo/detail/tout_mobile@2x.jpg') no-repeat;",
+	"toutColor" : "#000000",
+	"appStoreLink": "https://itunes.apple.com/us/app/oovoo-video-calls-messaging-stories/id428845974?mt=8",
+	"summary": "With a team of over 20 developers at <a href=\"http://www.krush.com\">Krush technologies</a> we transformed <a href=\"http://www.oovoo.com\">ooVoo</a> into a social hangout where you can chat face-to-face, instant message, and share colloborative stories.",
+ 	"technicalDetails": ["Swift 3.0", "AVFoundation", "Swinject", "Push Notifications", "MVVM"],
+	"poster": "/images/oovoo/detail/poster@2x.jpg",
+	"video" : "/videos/oovoo.mp4",
+	"videoIE" : "/videos/ie/oovoo.mp4",
+	"features": [{"title": "8-Way Video Calling", "copy": "Chat face-to-face with all of your friends no matter where they are.", "image": "/images/oovoo/detail/feature-1@2x.jpg"}, 
+	{"title": "Tell Your Story", "copy": "Share your best moments with video chains. Create your own chain or join a friend's. ", "image": "/images/oovoo/detail/feature-2@2x.jpg"}, 
+	{"title": "Any Device, Any Platform", "copy": "ooVoo is available on iOS, Android, desktop, and web.", "image": "/images/oovoo/detail/feature-3@2x.jpg"}],
 	"nextProjectLink": {"href":"project.html#instanote", "text": "SEE THE NEXT PROJECT: INSTANOTE"}
 }];
 
 var App = angular.module('MyApp', []);
-App.controller('MyController', function($scope, $http) {
+App.controller('MyController', [ '$scope', '$sce', function($scope, $sce) {
 	var page = window.location.hash.substr(1);
 	
 	var data;
@@ -92,6 +110,13 @@ App.controller('MyController', function($scope, $http) {
 		page = "instanote"
 		data = self[page][0];
 	}
+	
+	console.log($scope);
+	console.log($sce);
+
+	//$scope.ad = { 'text' : '<a href="#">Link</a>'};
+	$scope.summary = data["summary"];
+	$scope.htmlSummary = $sce.trustAsHtml($scope.summary);
 	
 	$scope.data = data;
 	$scope.folder = page;
@@ -107,7 +132,7 @@ App.controller('MyController', function($scope, $http) {
 	});
 	$scope.playVideo = function() {
 		if (isIE() || isTrident() || isEdge()){
-		    	$scope.video.src = $scope.data.videoIE;
+			$scope.video.src = $scope.data.videoIE;
 		}
 		$scope.video.play();
 		$scope.playButton.style.display = 'none';
@@ -116,4 +141,5 @@ App.controller('MyController', function($scope, $http) {
 	if (isTrident() || isEdge()){
 		document.querySelector("#flickity").removeAttribute("data-flickity-options");
 	}
-});
+}]);
+

@@ -29,8 +29,16 @@ var tetrafire = {
 	"toutColor" : "white",
 };
 
+var oovoo = {
+	"folder": "oovoo",
+	"name": "ooVoo",
+	"tagLine": "video chat, messaging, & stories",
+	"tout" : "url('/images/oovoo/detail/tout_mobile@2x.jpg') no-repeat;",
+	"toutColor" : "black",
+};
+
 var data = [{
-	"projects": [tetrafire,instanote,graph,matchpop,acronym]
+	"projects": [tetrafire, oovoo, instanote, graph, matchpop, acronym]
 }];
 
 
