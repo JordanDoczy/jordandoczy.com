@@ -24,7 +24,7 @@ var matchpop = {
 };
 var tetrafire = {
 	"folder": "tetrafire",
-	"name": "TetraFire",
+	"name": "Tetra Fire",
 	"tagLine": "igniting a classic with a new twist",
 	"toutColor" : "white",
 };
